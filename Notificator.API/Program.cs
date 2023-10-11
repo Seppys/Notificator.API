@@ -36,8 +36,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseRouting();
 
-app.MapControllers();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGet("/", context =>
+    {
+        context.Response.Redirect("swagger");
+        return Task.CompletedTask;
+    });
+    endpoints.MapControllers();
+});
 
 app.Run();
