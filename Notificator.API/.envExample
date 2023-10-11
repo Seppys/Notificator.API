@@ -1,0 +1,9 @@
+﻿# Environment variables for sending emails
+GMAIL_ADDRESS={Gmail address}
+GMAIL_TOKEN={Gmail auth token}
+
+# Enviroment variables for sendind telegram messages
+TELEGRAM_BOT_TOKEN={telegram bot token}
+
+# Environment variables for documentation
+TELEGRAM_BOT_URL={url to start a chat with the bot}
