@@ -16,7 +16,7 @@ Notificator API is an ASP.Net Core API that allows emails and Telegram messages 
 ```python
 import requests
 
-url = "https://notificatorapi.azurewebsites.net/api/telegram/send"
+url = "https://notificatorapi.onrender.com/api/telegram/send"
 payload = {
     "username": "yourTelegramUsername",
     "text": "Message sent from Notificator API"
@@ -31,7 +31,7 @@ print(response.text)
 ```python
 import requests
 
-url = "https://notificatorapi.azurewebsites.net/api/email/send"
+url = "https://notificatorapi.onrender.com/api/email/send"
 payload = {
     "address": "emailAddress@example.com",
     "subject": "Test email",
